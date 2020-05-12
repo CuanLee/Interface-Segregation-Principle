@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interface_Segregation_Principle
 {
-    public class Book : ILibraryItem
+    public class Book : IBorrowable
     {
         public string LibraryId { get; set; }
         public string Title { get; set; }

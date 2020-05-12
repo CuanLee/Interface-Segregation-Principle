@@ -10,12 +10,12 @@ namespace Interface_Segregation_Principle
     {
         static void Main(string[] args)
         {
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
-            Console.WriteLine("Hello World!");
-            Console.ReadKey();
+            IBorrowableDvd dvdBorrowable = new Dvd();
 
-            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+            dvdBorrowable.Title = "Test";
+
+            Console.WriteLine(dvdBorrowable.Title);
+            Console.ReadLine();
         }
     }
 }
